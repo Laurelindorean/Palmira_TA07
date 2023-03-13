@@ -31,16 +31,10 @@ public class Ejercicio2 {
 		int cantidad = Utils.pedirEntero();
 		System.out.println("Entra la cantidad pagada: ");
 		double cantidadPagada = Utils.pedirReal();
-		
+
 		Ventas venta = new Ventas(precioBruto, IVAaplicado, cantidad, cantidadPagada);
 		ventas.add(venta);
 		System.out.println(ventas.toString());
 	}
-
-
-	
-
-	
-	
 
 }
