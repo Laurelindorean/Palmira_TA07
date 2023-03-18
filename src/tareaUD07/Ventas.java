@@ -1,6 +1,5 @@
 package tareaUD07;
 
-import java.util.ArrayList;
 
 public class Ventas {
 
@@ -13,7 +12,7 @@ public class Ventas {
 	private double precioTotal;
 
 	public Ventas(double precioBruto, int IVAAplicado, int cantidadArticulos, double cantidadPagada) {
-		super();
+		
 		this.precioBruto = precioBruto;
 		this.IVAAplicado = IVAAplicado;
 		this.cantidadArticulos = cantidadArticulos;
