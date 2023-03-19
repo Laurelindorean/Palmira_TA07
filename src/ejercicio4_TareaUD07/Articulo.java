@@ -86,8 +86,8 @@ public class Articulo {
 
 	@Override
 	public String toString() {
-		return "\nArticulo: " + this.nombre + "\n Cantidad: " + this.cantidad + "\n Precio unidad(Sin IVA): " + this.precio
-				+ "\n IVA aplicado: " + String.format("%1$,.2f", this.iva) + "\n";
+		return "\nArticulo: " + this.nombre + "\n Cantidad: " + this.cantidad + "\n Precio unidad(Sin IVA): "
+				+ this.precio + "\n IVA aplicado: " + String.format("%1$,.2f", this.iva) + "\n";
 	}
 
 }

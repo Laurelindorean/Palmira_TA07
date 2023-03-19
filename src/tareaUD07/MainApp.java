@@ -1,4 +1,8 @@
 package tareaUD07;
+
+import ejercicio4_TareaUD07.Ejercicio4;
+import ejercicio4_TareaUD07.Super;
+
 /**
  * 
  * @author Palmira
@@ -8,10 +12,10 @@ public class MainApp {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		System.out.println("Que ejercicio quieres corregir? ");
 		int opcion = Utils.pedirEntero();
-		switch(opcion) {
+		switch (opcion) {
 		case 1:
 			Ejercicio1 ej1 = new Ejercicio1();
 			ej1.pedirDatos();
@@ -33,12 +37,16 @@ public class MainApp {
 			} while (chose == 1);
 			System.out.println("Gracias, estes es nuestro stock:");
 			System.out.println(ej3.toString());
-			
+			break;
+		case 4:
+			Super tienda1 = new Super(Ejercicio4.datosStock());
+			tienda1.gestionSuper();
+			break;
+		default:
+			System.out.println("Error. Debes introducir un numero del 1-4");
+
 		}
-		
-		
-		
-		
+
 	}
 
 }
